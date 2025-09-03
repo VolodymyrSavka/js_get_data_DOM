@@ -16,7 +16,11 @@ for (const element of elements) {
   }
 }
 
-average = sum / validCount;
+if (validCount === 0) {
+  average = 0;
+} else {
+  average = sum / validCount;
+}
 
 const calculateSum = document.querySelector('.total-population');
 
